@@ -43,7 +43,7 @@ const ProfileData: React.FC<Props> = ({
 
         <div>
           <h1>{name}</h1>
-          <h1>{username}</h1>
+          <h2>{username}</h2>
         </div>
       </Flex>
 
