@@ -15,7 +15,7 @@ interface Props {
   reponame: string;
   description?: string;
   language?: string;
-  starts: number;
+  stars: number;
   forks: number;
 }
 
@@ -24,7 +24,7 @@ const RepoCard: React.FC<Props> = ({
   reponame,
   description,
   language,
-  starts,
+  stars,
   forks,
 }) => {
   const languagueClass = language ? language.toLowerCase() : "other";
@@ -47,7 +47,7 @@ const RepoCard: React.FC<Props> = ({
           </li>
           <li>
             <StartIcon />
-            <span>{starts}</span>
+            <span>{stars}</span>
           </li>
           <li>
             <ForkIcon />
